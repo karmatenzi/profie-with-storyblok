@@ -11,7 +11,7 @@ export default async function Home({ params }: any) {
   );
 }
 
-export async function fetchData(params: any) {
+async function fetchData(params: any) {
   const storyblokApi = getStoryblokApi();
   let slug = params?.slug?.length ? params?.slug?.join("/") : "home";
 

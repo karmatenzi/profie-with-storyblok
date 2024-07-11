@@ -22,10 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <StoryblokProvider>
     <html lang="en">
-      <body className={`${inter.className} mx-10`}>{children}</body>
+      <StoryblokProvider>
+        <body className={`${inter.className} mx-10 bg-neutral-950 text-white`}>{children}</body>
+      </StoryblokProvider>
     </html>
-  </StoryblokProvider>
   );
 }

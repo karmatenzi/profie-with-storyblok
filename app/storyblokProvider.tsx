@@ -2,6 +2,7 @@
 "use client";
 import Feature from "@/components/feature";
 import Grid from "@/components/grid";
+import Header from "@/components/header";
 import Page from "@/components/page";
 import Teaser from "@/components/teaser";
 import { storyblokInit, apiPlugin } from "@storyblok/react/rsc";
@@ -10,7 +11,8 @@ const components = {
   feature: Feature,
   grid: Grid,
   teaser: Teaser,
-  page: Page
+  page: Page,
+  header: Header
 };
 /** 2. Initialize it as usual */
 storyblokInit({
