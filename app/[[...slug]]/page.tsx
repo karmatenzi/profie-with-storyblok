@@ -4,8 +4,7 @@ import StoryblokStory from "@storyblok/react/story";
 export default async function Home({ params }: any) {
   const { data } = await fetchData(params);
   return (
-    <div>
-      {/* <Navigation /> */}
+    <div className="text-neutral-300 antialiased selection:bg-white selection:text-black">
       <StoryblokStory story={data.story} />
     </div>
   );
